@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Finder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="heading">✨ Find Your Perfect Product! 🌈</h1>
+    </header>
+    <main class="container">
+        <aside class="filters">
+            <h2>Filters</h2>
+
+            <!-- Category -->
+            <label for="category">Category:</label>
+            <select id="category">
+                <option value="">Select Category</option>
+                <option value="fashion">Fashion</option>
+                <option value="health-wellness">Health & Wellness</option>
+                <option value="home-garden">Home & Garden</option>
+                <option value="beauty">Beauty</option>
+                <option value="electronics">Electronics</option>
+                <option value="adult-products">Adult Products</option>
+            </select>
+
+            <!-- Subcategory -->
+            <label for="subcategory">Subcategory:</label>
+            <select id="subcategory" disabled>
+                <option value="">Select Subcategory</option>
+            </select>
+
+            <!-- Product -->
+            <label for="product">Product:</label>
+            <select id="product" disabled>
+                <option value="">Select Product</option>
+            </select>
+
+            <!-- Price Range -->
+            <label for="price">Price Range:</label>
+            <input type="range" id="price" min="0" max="5000" step="50">
+            <span id="price-display">$0 - $5000</span>
+
+            <!-- Ratings -->
+            <label for="ratings">Ratings:</label>
+            <select id="ratings">
+                <option value="">Select Rating</option>
+                <option value="4">4 stars & above</option>
+                <option value="3">3 stars & above</option>
+            </select>
+
+            <!-- Apply Filters Button -->
+            <button id="apply-filters">Apply Filters</button>
+        </aside>
+
+        <!-- Results Section -->
+        <section class="products">
+            <h2>Product Results</h2>
+            <div id="product-list">No products found. Adjust your filters!</div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
